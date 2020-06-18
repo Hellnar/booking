@@ -1,0 +1,161 @@
+#dashboard {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+
+.sidebar-menu {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--dark-grey);
+	width: 200px;
+	padding: 20px;
+}
+
+.sidebar-name p {
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	color: var(--green);
+}
+
+.sidebar-menu-links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 20px;
+}
+
+.sidebar-menu-links a {
+	margin: 10px;
+}
+
+.sidebar-menu-links a:hover {
+	color: var(--green);
+}
+
+.sidebar-menu-links i {
+	margin-right: 10px;
+	width: 16px;
+}
+
+#content-calendar {
+	padding: 30px;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+}
+
+#calendar {
+	width: 60%;
+}
+
+#set-availability {
+	padding: 50px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.current-date {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.current-date label {
+	font-size: 18px;
+}
+
+.set-intervals {
+	display: flex;
+	align-items: center;
+}
+
+.delete-interval {
+	margin-left: 10px;
+	margin-bottom: 13px;
+}
+
+.set-availability-form a {
+	color: var(--green);
+	font-weight: 500;
+}
+
+.set-availability-form a:hover {
+	color: var(--dark-grey);
+}
+
+.apply-interval {
+	display: flex;
+	margin-top: 40px;
+}
+
+.apply-interval a {
+	border-radius: 10px;
+	background-color: var(--green);
+	padding: 10px 30px;
+	color: var(--dark-grey);
+	font-weight: 500;
+}
+
+.apply-interval a:hover {
+	background-color: var(--dark-grey);
+	color: #fff;
+}
+
+/* === CONTENT BOOKED === */
+#content-booked {
+	padding: 30px;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	display: none;
+}
+
+#content-booked .reschedule {
+	background-color: var(--light-grey);
+	padding: 3px;
+	margin: 0 3px;
+	border-radius: 5px;
+} 
+
+#content-booked .reschedule:hover {
+	background-color: #91d3e6;
+}
+
+#content-booked .cancel {
+	background-color: var(--light-grey);
+	padding: 3px;
+	margin: 0 3px;
+	border-radius: 5px;
+} 
+
+#content-booked .cancel:hover {
+	background-color: #e69191;
+}
+
+#content-booked td i {
+	color: var(--dark-grey);
+	margin: 0 5px;
+}
+
+.table-buttons {
+	text-align: center;
+}
+
+/* === CONTENT BOOKED === */
+
+#content-tasks {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	display: none;
+}
+
+details {
+	margin: 30px;
+}
