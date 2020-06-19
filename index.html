@@ -48,7 +48,7 @@
 										<label for="deadline">Deadline</label>
 										<input type="text" name="deadline" placeholder="Enter deadline date or time">
 										<label for="description">Description</label>
-										<textarea rows="5" name="description"></textarea>
+										<textarea rows="5" name="description" maxlength="1000"></textarea>
 									</form>
 								</div>
 								<div class="submit-button">
@@ -67,6 +67,13 @@
 					<p class="left-date">18</p>
 					<p class="left-day">Thursday</p>
 					<p class="left-month">June/2020</p>
+					<div class="set-month">
+						<p>Choose month</p>
+						<div class="prev-month">
+							<a href="#"><</a>
+							<a href="#">></a>
+						</div>
+					</div>
 				</div>
 				<div class="calendar-right">
 					<div class="grid-container">
@@ -78,40 +85,40 @@
 						<div class="grid-item days-names">Sa</div>  
 						<div class="grid-item days-names">Su</div>
 
-						<div class="grid-item"><a href="#availability">1</a></div>
-						<div class="grid-item"><a href="#availability"">2</a></div>
-						<div class="grid-item"><a href="#availability"">3</a></div>
-						<div class="grid-item"><a href="#availability"">4</a></div>
-						<div class="grid-item"><a href="#availability"">5</a></div>
-						<div class="grid-item"><a href="#availability"">6</a></div>
-						<div class="grid-item"><a href="#availability"">7</a></div>
+						<div class="grid-item active-item"><a href="#availability">1</a></div>
+						<div class="grid-item"><a href="#">2</a></div>
+						<div class="grid-item"><a href="#">3</a></div>
+						<div class="grid-item"><a href="#">4</a></div>
+						<div class="grid-item active-item"><a href="#availability">5</a></div>
+						<div class="grid-item active-item"><a href="#availability">6</a></div>
+						<div class="grid-item"><a href="#"">7</a></div>
 
-						<div class="grid-item"><a href="#availability"">8</a></div>
-						<div class="grid-item"><a href="#availability"">9</a></div>
-						<div class="grid-item"><a href="#availability"">10</a></div>
-						<div class="grid-item"><a href="#availability"">11</a></div>
-						<div class="grid-item"><a href="#availability"">12</a></div>
-						<div class="grid-item"><a href="#availability"">13</a></div>
-						<div class="grid-item"><a href="#availability"">14</a></div>
+						<div class="grid-item"><a href="#">8</a></div>
+						<div class="grid-item active-item"><a href="#availability">9</a></div>
+						<div class="grid-item active-item"><a href="#availability">10</a></div>
+						<div class="grid-item active-item"><a href="#availability">11</a></div>
+						<div class="grid-item"><a href="#">12</a></div>
+						<div class="grid-item"><a href="#">13</a></div>
+						<div class="grid-item"><a href="#">14</a></div>
 
-						<div class="grid-item"><a href="#availability"">15</a></div>
-						<div class="grid-item"><a href="#availability"">16</a></div>
-						<div class="grid-item"><a href="#availability"">17</a></div>
-						<div class="grid-item"><a href="#availability"">18</a></div>
-						<div class="grid-item"><a href="#availability"">19</a></div>
-						<div class="grid-item"><a href="#availability"">20</a></div>
-						<div class="grid-item"><a href="#availability"">21</a></div>
+						<div class="grid-item"><a href="#">15</a></div>
+						<div class="grid-item active-item"><a href="#">16</a></div>
+						<div class="grid-item"><a href="#">17</a></div>
+						<div class="grid-item"><a href="#">18</a></div>
+						<div class="grid-item active-item"><a href="#availability">19</a></div>
+						<div class="grid-item"><a href="#">20</a></div>
+						<div class="grid-item"><a href="#">21</a></div>
 
-						<div class="grid-item"><a href="#availability"">22</a></div>
-						<div class="grid-item"><a href="#availability"">23</a></div>
-						<div class="grid-item"><a href="#availability"">24</a></div>
-						<div class="grid-item"><a href="#availability"">25</a></div>
-						<div class="grid-item"><a href="#availability"">26</a></div>
-						<div class="grid-item"><a href="#availability"">27</a></div>
-						<div class="grid-item"><a href="#availability"">28</a></div>
+						<div class="grid-item"><a href="#">22</a></div>
+						<div class="grid-item"><a href="#">23</a></div>
+						<div class="grid-item active-item"><a href="#availability">24</a></div>
+						<div class="grid-item active-item"><a href="#availability">25</a></div>
+						<div class="grid-item active-item"><a href="#availability">26</a></div>
+						<div class="grid-item active-item"><a href="#availability">27</a></div>
+						<div class="grid-item active-item"><a href="#availability">28</a></div>
 
-						<div class="grid-item"><a href="#availability"">29</a></div>
-						<div class="grid-item"><a href="#availability"">30</a></div> 
+						<div class="grid-item"><a href="#">29</a></div>
+						<div class="grid-item"><a href="#">30</a></div> 
 					</div>
 					
 					<!-- BOOKING MODAL WINDOW -->
@@ -134,7 +141,7 @@
 											<label for="phone">Phone</label>
 											<input type="tel" name="phone" placeholder="Enter your phone number">
 											<label for="description">Description</label>
-											<textarea rows="5" name="description"></textarea>
+											<textarea rows="5" name="description" maxlength="1000"></textarea>
 										</form>
 									</div>
 									<div class="a-right">

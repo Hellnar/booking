@@ -1,3 +1,9 @@
+#content-booked h2, #content-calendar h2, #content-tasks h2 {
+	text-align: center;
+	margin: 10px;
+	color: var(--dark-grey);
+}
+
 #dashboard {
 	display: flex;
 	width: 100%;
@@ -125,18 +131,18 @@
 	background-color: #91d3e6;
 }
 
-#content-booked .cancel {
+#dashboard .cancel {
 	background-color: var(--light-grey);
 	padding: 3px;
 	margin: 0 3px;
 	border-radius: 5px;
 } 
 
-#content-booked .cancel:hover {
+#dashboard .cancel:hover {
 	background-color: #e69191;
 }
 
-#content-booked td i {
+#dashboard td i {
 	color: var(--dark-grey);
 	margin: 0 5px;
 }
@@ -145,7 +151,7 @@
 	text-align: center;
 }
 
-/* === CONTENT BOOKED === */
+/* === CONTENT TASKS === */
 
 #content-tasks {
 	padding: 30px;
@@ -156,6 +162,72 @@
 	display: none;
 }
 
-details {
-	margin: 30px;
+.tasks-table {
+	margin: 30px 0;
+}
+
+#show-completed {
+	color: var(--dark-grey);
+	font-weight: 500;
+	margin: 5px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	background-color: var(--green);
+}
+
+#show-completed:hover {
+	color: var(--green);
+	background-color: var(--dark-grey);
+}
+
+.tasks-completed {
+	display: none;
+	flex-direction: column;
+}
+
+.task-new {
+	text-align: center;
+}
+
+.task-new a {
+	color: var(--dark-grey);
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: #C6F6D5;
+}
+
+.task-in-process a {
+	color: var(--dark-grey);
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: #CEEDFF;
+}
+
+.task-completed a {
+	color: var(--dark-grey);
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: #E9D8FD;
+}
+
+.pagination {
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination a {
+	border-radius: 10px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid var(--green);
+	color: var(--dark-grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+}
+
+.pagination a:hover {
+	background-color: var(--green);
 }

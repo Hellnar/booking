@@ -29,6 +29,13 @@
 						<p class="left-date">18</p>
 						<p class="left-day">Thursday</p>
 						<p class="left-month">June/2020</p>
+						<div class="set-month">
+						<p>Choose month</p>
+						<div class="prev-month">
+							<a href="#"><</a>
+							<a href="#">></a>
+						</div>
+					</div>
 					</div>
 					<div class="calendar-right">
 						<div class="grid-container">
@@ -111,10 +118,11 @@
 
 		<div id="content-booked">
 			<div class="booked-table">
+				<h2>Booked Meetings</h2>
 				<table>
 					<tr>
 						<th class="w-20">Meeting</th>
-						<th class="w-10">Time</th>
+						<th class="w-10">Date & Time</th>
 						<th class="w-10">Name</th>
 						<th class="w-10">Email</th>
 						<th class="w-10">Phone</th>
@@ -123,7 +131,7 @@
 					</tr>
 					<tr>
 						<td>Хочу обсудить свой отпуск</td>
-						<td>10:30-11:00</td>
+						<td>June 18, 2020<br>10:30-11:00</td>
 						<td>Антон Попов</td>
 						<td>popov@mail.com</td>
 						<td>+123456785470</td>
@@ -132,7 +140,7 @@
 					</tr>
 					<tr>
 						<td>Открыт ли набор на верификаторов?</td>
-						<td>11:00-11:30</td>
+						<td>June 18, 2020<br>11:00-11:30</td>
 						<td>Сергей Иванов</td>
 						<td>ivanov@mail.com</td>
 						<td>+139755782410</td>
@@ -141,21 +149,31 @@
 					</tr>
 					<tr>
 						<td>Хочу обсудить вопрос зарплаты и еще несколько важных вопросов до выходных</td>
-						<td>14:00-15:00</td>
+						<td>June 18, 2020<br>14:00-15:00</td>
 						<td>Василий Милонов</td>
 						<td>milonov@mail.com</td>
 						<td>+139755782410</td>
-						<td>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id aliquam mauris. Fusce nibh tellus, iaculis vitae ligula semper, placerat varius nisl. Sed sed velit congue, viverra lacus id, varius ante. Maecenas commodo magna justo, ut ultricies justo eleifend et. Vestibulum id odio semper, dignissim tellus eu, bibendum erat. Nam ac justo dolor. Sed pellentesque posuere faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec arcu risus, placerat non ornare in, cursus et nunc. Pellentesque elit erat, sollicitudin a diam vel, cursus varius ex. Maecenas imperdiet ex orci, a varius erat laoreet vel. Morbi non massa in nisi vestibulum ullamcorper maximus sed mauris.
+
+						Integer eu ornare augue. Aliquam erat volutpat. Sed condimentum tincidunt metus, et aliquet neque finibus quis. Vestibulum finibus vulputate tellus. Maecenas bibendum odio sed commodo convallis. Duis id est eu lorem consectetur aliquet sed vel justo. In hac habitasse platea dictumst. Aliquam consequat suscipit cursus. Nam ac mollis nibh, sit amet viverra elit.
+
+						Sed aliquet, enim auctor viverra sodales, lectus sem tincidunt enim, sed convallis purus diam sit amet arcu.</td>
 						<td class="table-buttons"><a class="reschedule" href="#"><i class="far fa-clock"></i></a><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
 					</tr>
 				</table>
+				<div class="pagination">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">...</a>
+				</div>
 			</div>
 		</div>
 
 		<div id="content-tasks">	
-			<details>
-			<summary>Completed tasks</summary>
-			<div class="tasks-table">
+			<a id="show-completed" href="#" onclick="showcompleted()">Show completed tasks</a>
+			<div class="tasks-table tasks-completed">
+				<h2>Completed tasks</h2>
 				<table>
 					<tr>
 						<th class="w-20">Task</th>
@@ -174,8 +192,8 @@
 						<td>popov@mail.com</td>
 						<td>+123456785470</td>
 						<td>Мне нужны такие-то документы до 21.06.2020. Их нужно отправить до обеда.</td>
-						<td>In process</td>
-						<td>Del</td>
+						<td class="task-completed"><a href="#">Completed</a></td>
+						<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
 					</tr>
 					<tr>
 						<td>Выплатить аванс</td>
@@ -184,8 +202,8 @@
 						<td>popov@mail.com</td>
 						<td>+123456785470</td>
 						<td>Привет. Мы с тобой обсуждали выплату аванса. Мне как раз очень нужен, очень горит до 27 числа. Создал задачу, чтобы ты не забыла. Спасибо!</td>
-						<td>New</td>
-						<td>Del</td>
+						<td class="task-completed"><a href="#">Completed</a></td>
+						<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
 					</tr>
 					<tr>
 						<td>Выплатить аванс</td>
@@ -194,14 +212,20 @@
 						<td>popov@mail.com</td>
 						<td>+123456785470</td>
 						<td>Привет. Мы с тобой обсуждали выплату аванса. Мне как раз очень нужен, очень горит до 27 числа. Создал задачу, чтобы ты не забыла. Спасибо!</td>
-						<td>New</td>
-						<td>Del</td>
+						<td class="task-completed"><a href="#">Completed</a></td>
+						<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
 					</tr>
 				</table>
+				<div class="pagination">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">...</a>
+				</div>
 			</div>
-			</details>
 
 			<div class="tasks-table">
+				<h2>Active tasks</h2>
 				<table>
 					<tr>
 						<th class="w-20">Task</th>
@@ -220,8 +244,8 @@
 						<td>popov@mail.com</td>
 						<td>+123456785470</td>
 						<td>Мне нужны такие-то документы до 21.06.2020. Их нужно отправить до обеда.</td>
-						<td>In process</td>
-						<td>Del</td>
+						<td class="task-in-process"><a href="#">In process</a></td>
+						<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
 					</tr>
 					<tr>
 						<td>Выплатить аванс</td>
@@ -230,8 +254,8 @@
 						<td>popov@mail.com</td>
 						<td>+123456785470</td>
 						<td>Привет. Мы с тобой обсуждали выплату аванса. Мне как раз очень нужен, очень горит до 27 числа. Создал задачу, чтобы ты не забыла. Спасибо!</td>
-						<td>New</td>
-						<td>Del</td>
+						<td class="task-new"><a href="#">New</a></td>
+						<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
 					</tr>
 					<tr>
 						<td>Выплатить аванс</td>
@@ -240,10 +264,16 @@
 						<td>popov@mail.com</td>
 						<td>+123456785470</td>
 						<td>Привет. Мы с тобой обсуждали выплату аванса. Мне как раз очень нужен, очень горит до 27 числа. Создал задачу, чтобы ты не забыла. Спасибо!</td>
-						<td>New</td>
-						<td>Del</td>
+						<td class="task-new"><a href="#">New</a></td>
+						<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
 					</tr>
 				</table>
+				<div class="pagination">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">...</a>
+				</div>
 			</div>
 		</div>
 	</section>

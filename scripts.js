@@ -2,19 +2,32 @@ function calendar() {
 	document.getElementById('content-calendar').style.display = "flex";
 	document.getElementById('content-booked').style.display = "none";
 	document.getElementById('content-tasks').style.display = "none";
-	console.log("calendar");
 }
 
 function meetings() {
 	document.getElementById('content-calendar').style.display = "none";
 	document.getElementById('content-booked').style.display = "flex";
 	document.getElementById('content-tasks').style.display = "none";
-	console.log("meetings");
 }
 
 function tasks() {
 	document.getElementById('content-calendar').style.display = "none";
 	document.getElementById('content-booked').style.display = "none";
 	document.getElementById('content-tasks').style.display = "flex";
-	console.log("tasks");
+}
+
+document.querySelector('.tasks-completed').style.display = "none";
+document.getElementById('show-completed').innerText = "Show completed tasks";
+
+function showcompleted() {
+	if (document.querySelector('.tasks-completed').style.display === "none") {
+		document.querySelector('.tasks-completed').style.display = "flex";
+		document.getElementById('show-completed').innerText = "Hide completed tasks";
+		console.log("must show")
+	} else {
+		document.querySelector('.tasks-completed').style.display = "none";
+		document.getElementById('show-completed').innerText = "Show completed tasks";
+		console.log("must hide")
+	}
+
 }

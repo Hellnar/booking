@@ -188,6 +188,35 @@ nav ul a:hover {
 	color: var(--dark-grey);
 }
 
+.set-month {
+	margin: 20px 0 10px 0;
+	width: 100%;
+}
+
+.set-month p {
+	color: var(--dark-grey);
+	margin: 10px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.prev-month {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prev-month a {
+	border-radius: 10px;
+	color: var(--green);
+	background-color: var(--dark-grey);
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+}
+
 .calendar-right {
 	width: 75%;
 	background-color: var(--dark-grey);
@@ -209,7 +238,11 @@ nav ul a:hover {
 	color: #fff;
 	padding: 5px;
 	margin: 10px;
-	border-radius: 50%;
+	border-radius: 10px;
+}
+
+.active-item {
+	border: 1px solid var(--green);
 }
 
 .grid-item:hover {
