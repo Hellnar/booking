@@ -58,6 +58,14 @@ textarea {
 	resize: none;
 }
 
+select {
+	outline: none;
+	border: 1px solid var(--light-grey);
+	padding: 10px 5px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
 ::placeholder {
 	opacity: 0.4;
 }

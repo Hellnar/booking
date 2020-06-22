@@ -17,6 +17,7 @@
 			</div>
 			<div class="sidebar-menu-links">
 				<a href="#" onclick="calendar()"><i class="far fa-calendar-alt"></i>Calendar</a>
+				<a href="#" onclick="bookMeeting()"><i class="far fa-calendar-alt"></i>Book Meeting</a>
 				<a href="#" onclick="meetings()"><i class="far fa-bookmark"></i></i>Meetings</a>
 				<a href="#" onclick="tasks()"><i class="fas fa-list-ul"></i>Tasks</a>
 			</div>
@@ -112,6 +113,155 @@
 				
 				<div class="apply-interval">
 					<a href="#">Apply</a>
+				</div>
+			</div>	
+		</div>
+
+		<div id="content-book-meeting">
+			<div id="calendar-book-meeting">
+				<div class="calendar-area">
+					<div class="calendar-left">
+						<p class="left-date">18</p>
+						<p class="left-day">Thursday</p>
+						<p class="left-month">June/2020</p>
+						<div class="set-month">
+						<p>Choose month</p>
+						<div class="prev-month">
+							<a href="#"><</a>
+							<a href="#">></a>
+						</div>
+					</div>
+					</div>
+					<div class="calendar-right">
+						<div class="grid-container">
+							<div class="grid-item days-names">Mo</div>
+							<div class="grid-item days-names">Tu</div>
+							<div class="grid-item days-names">We</div>  
+							<div class="grid-item days-names">Th</div>
+							<div class="grid-item days-names">Fr</div>
+							<div class="grid-item days-names">Sa</div>  
+							<div class="grid-item days-names">Su</div>
+
+							<div class="grid-item"><a href="#availability">1</a></div>
+							<div class="grid-item"><a href="#availability"">2</a></div>
+							<div class="grid-item"><a href="#availability"">3</a></div>
+							<div class="grid-item"><a href="#availability"">4</a></div>
+							<div class="grid-item"><a href="#availability"">5</a></div>
+							<div class="grid-item"><a href="#availability"">6</a></div>
+							<div class="grid-item"><a href="#availability"">7</a></div>
+
+							<div class="grid-item"><a href="#availability"">8</a></div>
+							<div class="grid-item"><a href="#availability"">9</a></div>
+							<div class="grid-item"><a href="#availability"">10</a></div>
+							<div class="grid-item"><a href="#availability"">11</a></div>
+							<div class="grid-item"><a href="#availability"">12</a></div>
+							<div class="grid-item"><a href="#availability"">13</a></div>
+							<div class="grid-item"><a href="#availability"">14</a></div>
+
+							<div class="grid-item"><a href="#availability"">15</a></div>
+							<div class="grid-item"><a href="#availability"">16</a></div>
+							<div class="grid-item"><a href="#availability"">17</a></div>
+							<div class="grid-item"><a href="#availability"">18</a></div>
+							<div class="grid-item"><a href="#availability"">19</a></div>
+							<div class="grid-item"><a href="#availability"">20</a></div>
+							<div class="grid-item"><a href="#availability"">21</a></div>
+
+							<div class="grid-item"><a href="#availability"">22</a></div>
+							<div class="grid-item"><a href="#availability"">23</a></div>
+							<div class="grid-item"><a href="#availability"">24</a></div>
+							<div class="grid-item"><a href="#availability"">25</a></div>
+							<div class="grid-item"><a href="#availability"">26</a></div>
+							<div class="grid-item"><a href="#availability"">27</a></div>
+							<div class="grid-item"><a href="#availability"">28</a></div>
+
+							<div class="grid-item"><a href="#availability"">29</a></div>
+							<div class="grid-item"><a href="#availability"">30</a></div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="employees-database">
+					<table>
+						<tr>
+							<th class="w-10">Name</th>
+							<th class="w-10">Email</th>
+							<th class="w-10">Phone</th>
+							<th class="w-10"></th>
+						</tr>
+						<tr>
+							<td>Anton Morskoy</td>
+							<td>morskoy@company.com</td>
+							<td>+380961485354</td>
+							<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
+						</tr>
+						<tr>
+							<td>Irina Mykhailova</td>
+							<td>mykhailova@company.com</td>
+							<td>+380961485354</td>
+							<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
+						</tr>
+						<tr>
+							<td>APavel Volodin</td>
+							<td>volodin@company.com</td>
+							<td>+380961485354</td>
+							<td class="table-buttons"><a class="cancel" href="#"><i class="far fa-window-close"></i></a></td>
+						</tr>
+					</table>
+					<div class="add-employee">
+					<a href="#">Add new person</a>
+				</div>
+				</div>
+			</div>
+
+			<div id="book-meeting">
+				<div class="task-form-content">
+					<h2>Book meeting</h2>
+					<div class="a-area">
+						<div class="a-left">
+							<form>
+								<div class="current-date">
+									<label>Date:</label>
+									<label>Thursday, June 18</label>
+								</div>
+								<label for="title">Title</label>
+								<input type="text" name="title" placeholder="Enter booking title">
+								<div class="set-intervals">
+									<div class="set-from">
+										<label>From</label>
+										<input type="time" name="from">
+									</div>
+									<div class="set-to">
+										<label>To</label>
+										<input type="time" name="to">
+									</div>
+									<div class="delete-interval">
+										<a href="#"><i class="far fa-trash-alt"></i></a>
+									</div>
+								</div>
+								<label for="name">Invitees<span>*Hold Ctrl for multiple select</span></label>
+								<select name="name" multiple>
+									<option style="background-image:url(logo.png);">Person1</option>
+									<option>Person2</option>
+									<option>Person3</option>
+									<option>Person4</option>
+									<option>Person5</option>
+									<option>Person6</option>
+									<option>Person7</option>
+									<option>Person8</option>
+									<option>Person9</option>
+									<option>Person10</option>
+									<option>Person11</option>
+									<option>Person12</option>
+									<option>Person13</option>
+								</select>
+								<label for="description">Description</label>
+								<textarea rows="5" name="description" maxlength="1000"></textarea>
+							</form>
+						</div>
+					</div>
+					<div class="submit-button">
+						<a href="#">Submit</a>
+					</div>
 				</div>
 			</div>	
 		</div>	
